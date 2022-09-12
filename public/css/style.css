@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,200;0,8..30,500;1,8..30,300&family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.main_menu{
+    background-color: var(--main-bg);  
+    height: 12.8vh;   
+}
+.navbar{
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color:var(--main-color)
+}
+
+.navbar-toggler {
+    background: white;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* main headrer */
+.main_header{
+    height: 80vh;
+}
+
+.main_header_left {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_header_right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+} 
+/* error page image style */
+/* .errorimg{
+    height: 60rem;
+    width: 30rem;
+} */
+.weatherText{
+    color: var(--main-color);
+}
+
+        /* footer   style*/
+
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--main-bg);
+    /* margin-top: auto; */
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    line-height: 4.5rem;
+    font-size: 1.4rem;
+    margin-top: auto;
+}
+
+
+
+
+
+/* temprature style details show hw=ere */
+.main_content{
+    margin-top: 5rem;
+}
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 10px auto 6rem;
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+::placeholder{
+    color: #bfc1c8;
+}
+.temp_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background-color: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.temp_form input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: white;
+}
+.tempInfo{
+    width: 50rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+.top_layer p {
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem 0;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+.main_layer .middleLayer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin: 0 1rem;
+}
+.main_layer .middleLayer p,
+.main_layer .middleLayer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.fa{
+    color: #009ad8;
+}
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.dataHide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+
+        /* media query  */
+
+@media(max-width:768px){
+    body{
+        width: 100%;
+    }
+    .main_menu{
+        height: auto;
+    }
+    .main_header{
+        margin-bottom: 2rem;
+        height: fit-content;
+    }
+    .main_header_left{
+        width: auto;
+    }
+    .temp_form{
+        width: auto;
+    }
+    .tempInfo{
+        width: auto;
+    }
+    footer{
+        margin-top: auto;
+    }
+}

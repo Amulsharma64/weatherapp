@@ -1,0 +1,15 @@
+{
+  "name": "aksaraweather",
+  "version": "1.0.0",
+  "description": "Realtime wheather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amul Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}
