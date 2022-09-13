@@ -252,6 +252,11 @@ sup{
     .main_header_left{
         width: auto;
     }
+    .main_layer .middleLayer p,
+    .main_layer .middleLayer .fa{
+    font-size: 6rem;
+    font-weight: 900;
+}
     .temp_form{
         width: auto;
     }
