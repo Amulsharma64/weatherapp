@@ -1,6 +1,10 @@
 # Weatherapp
 A weather app that pulls from the OpenWeatherMap API to allow users to search for and view the weather in cities worldwide. Built with nodejs and Express.
 
+Let's talk about the application; Our weather app will show the weather information that it will get from the API like this, an Icon that shows the weather status, the temperature value (18°C) in Celsius unit, the weather description (clear sky/ICON), and then the user's city and country (London, GB).
+
+The API provider is [http://www.OpenWeatherMap.org](http://www.OpenWeatherMap.org)
+
 ## Landing Page
 ![Home Page](assests/Screenshot.png "Welcome on the site")
 
