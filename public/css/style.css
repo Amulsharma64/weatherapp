@@ -144,7 +144,7 @@ footer p{
 .temp_form{
     width: 60%;
     position: relative;
-    margin: 10px auto 6rem;
+    margin: 10px auto 4rem;
 }
 .temp_form input[type="text"]{
     width: 100%;
@@ -231,10 +231,96 @@ sup{
     margin-top: -2rem;
 }
 .dataHide{
-    visibility: hidden;
+    display: none;
     transition: all 0.3s linear;
 }
 
+/* Forecast CSS */
+@media (max-width:20000px) {
+    .line{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .5rem;
+      text-align: center;
+    }
+    }
+    
+    .card {
+      margin:6%;
+      cursor: pointer;
+      background-color: #fff;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+      width: auto;
+      min-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      
+    }
+
+    .card:hover {
+      box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+      transform: scale(1.05,1.05);
+    }
+    .list-group li{
+      font-weight: 500;
+      font-size: large;
+      min-height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:0 10px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+    
+    @media (max-width:800px) {
+      .line {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width:500px) {
+      .line {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cardHead{
+        font-weight: 500;
+    }
+#fTitle{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.forecast_btn{
+    border: none;   
+    padding: 0 3rem;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 4rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+    background-color: teal;
+    color: white;
+    font-weight: 500;
+}
+
+.forecast_btn:hover{
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-weight: 500;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
 
         /* media query  */
 
@@ -265,5 +351,8 @@ sup{
     }
     footer{
         margin-top: auto;
+    }
+    #fTitle{
+        margin: 20px;
     }
 }

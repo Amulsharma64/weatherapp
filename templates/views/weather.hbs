@@ -8,7 +8,7 @@
             <!-- main header -->
     <div class="container-fluid main_header">
         <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
+            <div class="col-md-10 col-12 mx-auto weather">
                 <div class="main_content">
                     <form class="temp_form">
                         <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
@@ -28,7 +28,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="btnContainer">
+                    <button type="button" id="forecast" class="forecast_btn">forecast</button>
+                </div>
             </div>
+        </div>
+       
+        
+    </div>   
+     <!-- main header of Forcast --> 
+    <div class="FData dataHide">
+        <h1 id="fTitle"></h1>
+        <div class="line" id="Fdata">
+           
+        </div>
+        
+    <div class="text-center">
+        <div class="d-inline">
+            <a href="/weather">
+            <button class="forecast_btn">Go Back</button>
+            </a>
+        </div>
         </div>
     </div>
     <!-- footer code  -->
@@ -37,5 +57,6 @@
       {{!-- javaScriptLinks --}}
     {{>bodyLinks}}
     <script src = "js/index.js"></script>
+
 </body>
 </html>
