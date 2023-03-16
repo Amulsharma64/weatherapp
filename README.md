@@ -54,4 +54,4 @@ Clone the repository unto your local machine cd to the folder.
 Give a ⭐️ if you like this project!
 
 ## 📝 License
-This project is <a href="https://github.com/Amulsharma64/Amulsharma64/blob/master/LICENSE"><img src="https://img.shields.io/github/license/antonkomarev/github-profile-views-counter.svg?style=flat-square" alt="License"></a> licensed.
+This project is <a href="https://github.com/Amulsharma64/Amulsharma64/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/antonkomarev/github-profile-views-counter.svg?style=flat-square" alt="License"></a> licensed.
